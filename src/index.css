@@ -1,0 +1,369 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  /* font-family */
+  font-family: "Heebo";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(33, 36, 61, 1);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.navbar_menu {
+  display: flex;
+  margin-left: auto;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.navbar_menu_list {
+  display: flex;
+  gap: 33px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* works hero */
+
+.works_hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works_hero_left {
+  max-width: 500px;
+}
+
+.works_hero_intro {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.works_hero_description {
+  margin-bottom: 47px;
+}
+
+.works_hero_button {
+  background-color: rgba(255, 100, 100, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 12px 21px 17px 20px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 70px;
+}
+
+.works_hero_avatar {
+  width: 243px;
+  height: 243px;
+}
+
+/* recent section */
+
+.recent-post {
+  background-color: rgba(237, 247, 250, 1);
+  padding-bottom: 32px;
+}
+
+.recent_cards {
+  display: flex;
+  column-gap: 30px;
+}
+
+.recent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent_heading {
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.recent_view {
+  color: rgba(0, 168, 204, 1);
+  cursor: pointer;
+}
+
+.recent_card1 {
+  max-width: 418px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 24px 26px 20px 22px;
+}
+
+.recent_card1_title {
+  font-size: 26px;
+  line-height: 38px;
+  margin-bottom: 27px;
+}
+
+.recent_card1_center {
+  display: flex;
+  column-gap: 26px;
+  margin-bottom: 11px;
+}
+
+/* featured works */
+
+.featured_title {
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.featured_works {
+  margin-bottom: 120px;
+}
+
+.featured_works_card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.card_title {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card_year {
+  display: flex;
+  align-items: center;
+  column-gap: 26px;
+  margin-bottom: 17px;
+}
+
+.card_name {
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(134, 149, 164, 1);
+}
+
+.card_description {
+  max-width: 550px;
+}
+
+.card_year_icon {
+  background: rgba(20, 40, 80, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 1px 10px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 50px;
+}
+
+/* works */
+
+.work_title {
+  font-size: 44px;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+
+/* blog */
+
+.blog {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+.blog_card {
+  margin-bottom: 60px;
+}
+
+.blog_card_title {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.blog_info {
+  display: flex;
+  column-gap: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.blog_info_divide {
+  color: rgba(134, 149, 164, 1);
+}
+
+.blog_name {
+  color: rgba(134, 149, 164, 1);
+}
+
+.blog_description {
+  max-width: 700px;
+}
+
+/* footer */
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+/* responsive part */
+
+@media screen and (max-width: 770px) {
+  .featured_works_card {
+    align-items: center;
+  }
+  .card_right {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar_menu_list {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .navbar_menu {
+    margin-bottom: 0;
+  }
+  /* works-hero */
+  .works_hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .works_hero_avatar {
+    margin-bottom: 33px;
+    width: 180px;
+    height: 180px;
+  }
+  .works_hero_intro {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .works_hero_description {
+    margin-bottom: 27px;
+  }
+  .recent_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .recent_view {
+    display: none;
+  }
+  .recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* featured works */
+  .featured_title {
+    text-align: center;
+  }
+  .featured_works_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  .card_title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  /* works */
+  .work_title {
+    font-size: 30px;
+  }
+  /* blog */
+  .blog_cards {
+    margin-bottom: 80px;
+  }
+  .blog {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .blog_card {
+    margin-bottom: 20px;
+  }
+  .blog_card_title {
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 6px;
+  }
+  .blog_info {
+    column-gap: 14px;
+  }
+}
